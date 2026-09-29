@@ -37,13 +37,13 @@ npm run dev
 
 Then open [http://localhost:3000](http://localhost:3000).
 
-| Command | What it does |
-|---|---|
-| `npm run dev` | Starts the development server |
-| `npm run build` | Creates a production build |
-| `npm run lint` | Runs ESLint |
-| `npm run typecheck` | Checks TypeScript types |
-| `npm run format` | Formats the code with Prettier |
+| Command             | What it does                   |
+| ------------------- | ------------------------------ |
+| `npm run dev`       | Starts the development server  |
+| `npm run build`     | Creates a production build     |
+| `npm run lint`      | Runs ESLint                    |
+| `npm run typecheck` | Checks TypeScript types        |
+| `npm run format`    | Formats the code with Prettier |
 
 ## Licence
 

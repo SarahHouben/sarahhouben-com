@@ -53,13 +53,13 @@ A calm "paper and ink" look: plenty of white space, one column, navy ink on ligh
 
 Every text colour meets WCAG AAA (7:1) against its background. Don't add new colours without checking contrast.
 
-| Token | Light | Dark | Use |
-|---|---|---|---|
-| `--paper` | `#F8F9F9` | `#142130` | Page background |
-| `--ink` | `#203242` | `#EEF1F4` | Text, headings, underlines, focus outline |
-| `--muted` | `#3C4C59` | `#B9C3CD` | Secondary text |
+| Token      | Light     | Dark      | Use                                          |
+| ---------- | --------- | --------- | -------------------------------------------- |
+| `--paper`  | `#F8F9F9` | `#142130` | Page background                              |
+| `--ink`    | `#203242` | `#EEF1F4` | Text, headings, underlines, focus outline    |
+| `--muted`  | `#3C4C59` | `#B9C3CD` | Secondary text                               |
 | `--accent` | `#742A34` | `#E6A4AD` | **Only** for link hover (text and underline) |
-| `--line` | `#D5DAE0` | `#2E3E50` | Hairline borders |
+| `--line`   | `#D5DAE0` | `#2E3E50` | Hairline borders                             |
 
 - Dark mode follows `prefers-color-scheme`, with `data-theme="light"` or `data-theme="dark"` on `<html>` as an override from the theme toggle.
 - Links: navy text with a gentle, slightly wavy underline, drawn as a repeating SVG used as a CSS mask, so it takes `currentColor` and works in both themes. On hover, the text and underline turn `--accent`. Navigation links show the underline only on hover.
@@ -119,7 +119,7 @@ Aim for WCAG 2.2 AAA where possible, and never fall below AA.
 - Function components with named exports. Default exports only where Next.js requires them (pages and layouts).
 - PascalCase for component files and folders; camelCase for CSS Module class names.
 - Keep components small and focused.
-- Comments explain *why*, not *what*. Don't add comments that restate the code.
+- Comments explain _why_, not _what_. Don't add comments that restate the code.
 - When replacing a file or component, delete the old one in the same change.
 - Ask before adding a dependency.
 
