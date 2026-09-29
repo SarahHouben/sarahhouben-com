@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# sarahhouben.com
 
-## Getting Started
+The source code for my personal website, [sarahhouben.com](https://sarahhouben.com).
 
-First, run the development server:
+I'm a full stack engineer working with React, TypeScript and Node.js. This site is also a small showcase of how I work: accessible, well tested, and built AI-first with Claude Code.
+
+**Status:** version 1 in progress.
+
+## What's in it
+
+- A one-page portfolio: about me, how I work with AI, case studies, and contact details
+- A handwritten signature that writes itself, drawn with SVG masks, with a still version for reduced motion
+- Light and dark mode
+
+## Principles
+
+- **Accessibility:** aiming for WCAG 2.2 AAA, and never below AA, with automated accessibility checks in the tests.
+- **Privacy:** no tracking, no cookies and no third-party requests. The font is self-hosted.
+- **AI-first:** built with Claude Code. The project rules it follows are in [CLAUDE.md](CLAUDE.md), and [docs/build-log.md](docs/build-log.md) records what was built, how AI helped and what I changed.
+
+## Tech stack
+
+- [Next.js](https://nextjs.org) (App Router) with TypeScript and the React Compiler
+- CSS Modules and design tokens
+- MDX for case studies
+- Hosted on [Vercel](https://vercel.com)
+- Planned: Playwright with axe for end-to-end and accessibility tests, and Supabase for the contact form
+
+## Running it locally
+
+You'll need Node.js 22 (see [.nvmrc](.nvmrc)).
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Command | What it does |
+|---|---|
+| `npm run dev` | Starts the development server |
+| `npm run build` | Creates a production build |
+| `npm run lint` | Runs ESLint |
+| `npm run typecheck` | Checks TypeScript types |
+| `npm run format` | Formats the code with Prettier |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Licence
 
-## Learn More
+The code is released under the [MIT licence](LICENSE).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The licence doesn't cover the written content, case studies, images or the signature design. These are © Sarah Houben and aren't licensed for reuse.
